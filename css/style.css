@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #6C4AB6;
+    --accent-color: #D67AB1;
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6C4AB6;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(108, 74, 182, 0.3);
+    transition: all 0.3s ease;
+}
+
+.brand:hover {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-color);
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.model-section {
+    background-color: var(--background-color);
+}
+
+.info-section {
+    background-color: #0a0a0a;
+    padding: 4rem 2rem;
+}
+
+.contact-section {
+    background-color: #050505;
+    padding: 4rem 2rem;
+}
+
+model-viewer {
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    --progress-bar-color: #6C4AB6;
+    --progress-bar-height: 3px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.model-section iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+}

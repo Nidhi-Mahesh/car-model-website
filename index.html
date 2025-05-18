@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BatMob - Luxury Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">BatMob</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section model-section">
+        <model-viewer 
+            src="./aston_martin_vulcan.glb"
+            alt="Aston Martin Vulcan"
+            camera-controls
+            exposure="1"
+            shadow-intensity="1"
+            environment-image="neutral"
+            camera-orbit="45deg 80deg 1m"
+            camera-target="0 0 0"
+            field-of-view="40deg"
+            loading="eager"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            style="width: 100%; height: 100vh;">
+            <div class="progress-bar hide" slot="progress-bar"></div>
+        </model-viewer>
+    </section>
+
+    <section class="section info-section">
+        <div class="container">
+            <h2>Experience Luxury Redefined</h2>
+            <p>BatMob represents the pinnacle of automotive excellence, combining cutting-edge technology with timeless design. Our vehicles are crafted for those who demand nothing but the extraordinary.</p>
+            <p>With over two decades of innovation in the luxury automobile sector, we've consistently pushed the boundaries of what's possible in automotive engineering.</p>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <p>Email: contact@batmob.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Luxury Drive, Gotham City, GC 12345</p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
